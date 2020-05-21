@@ -1,0 +1,23 @@
+{
+    "name": "Webastro",
+    "version": "1.0.0",
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
+    "author": "Admin",
+    "contributors": [],
+    "dependencies": {
+        "express": "^4.17.1",
+        "express-handlebars": "^4.0.4",
+        "hbs": "^4.1.1",
+        "swisseph": "^0.5.13"
+    },
+    "scripts": {
+        "start": "node app.js"
+    }
+
+}

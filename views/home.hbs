@@ -1,0 +1,23 @@
+<h1>Главная страница</h1>
+<input id="datePicker" type="datetime-local">
+<div id="timezone"</div>
+<script>
+function zeroPadded(val) {
+  if (val >= 10)
+    return val;
+  else
+    return '0' + val;
+}
+var d = new Date();
+var s = d.getFullYear()+"-"+zeroPadded(d.getMonth() + 1)+"-"+zeroPadded(d.getDate())+"T"+zeroPadded(d.getHours())+":"+zeroPadded(d.getMinutes());
+document.getElementById('datePicker').value = s;
+document.getElementById("timezone").innerHTML = Intl.DateTimeFormat().resolvedOptions().timeZone;
+</script>
+        <h3>Астроданные</h3>
+        <ul>
+            {{#each astrotexts}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+
+<p>{{astrotext}}</p>
